@@ -12,4 +12,4 @@ The MET landinding page was created using the following technologies:
 - SCSS
 
 ## Preview Link
-[DEMO LINK]
+[DEMO LINK] (https://anvbondar.github.io/the-met-landing/);
