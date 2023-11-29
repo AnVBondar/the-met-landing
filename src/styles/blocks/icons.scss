@@ -34,25 +34,46 @@
 .tooltip {
   position: absolute;
   text-align: right;
-  top: -45px;
-  right: 110px;
+  top: -30px;
+  right: 45px;
   left: -230px;
   visibility: hidden;
   padding-right: 30px;
 
+  @include onTablet {
+    top: -45px;
+    right: 110px;
+  }
+
   &__address {
     @include page-Text-style;
+    font-size: 12px;
+    line-height: normal;
     color: #fff;
     text-transform: uppercase;
     &--gap {
-      margin-top: 8px;
+      margin-top: 5px;
+
+      @include onTablet {
+        margin-top: 8px;
+      }
+    }
+
+    @include onTablet {
+      font-size: 16px;
     }
   }
 
   &__phone {
     @include page-Text-style;
+    font-size: 12px;
+    line-height: normal;
     color: #fff;
     text-decoration: none;
+
+    @include onTablet {
+      font-size: 16px;
+    }
 
     &:hover {
       color: $text-color-2;
